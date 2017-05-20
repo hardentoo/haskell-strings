@@ -72,6 +72,17 @@ executables:
     dependencies:
       - bytestring
       - word8
+  map-accum-byte-string-lazy:
+    source-dirs: src
+    main: MapAccumByteStringLazy.hs
+    dependencies:
+      - bytestring
+      - word8
+  map-accum-byte-string-lazy-char:
+    source-dirs: src
+    main: MapAccumByteStringLazyChar.hs
+    dependencies:
+      - bytestring
   one-liner-byte-string-lazy:
     source-dirs: src
     main: OneLinerByteStringLazy.hs

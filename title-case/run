@@ -11,10 +11,10 @@ timeIt "Python 1" python title1.py
 timeIt "Python 2" python title2.py
 timeIt "Perl" perl -pe 's/(\w+)/\u$1/g'
 timeIt "Node" node title.js
-timeIt "Go" ./title
-timeIt "C script" ./script
-timeIt "C capitalise" ./capitalise
-timeIt "C capitalise-goto" ./capitalise-goto
+timeIt "Go" bin/title
+timeIt "C script" bin/script
+timeIt "C capitalise" bin/capitalise
+timeIt "C capitalise-goto" bin/capitalise-goto
 
 timeIt "Haskell String"            bin/normal
 timeIt "Haskell Text"              bin/text
@@ -31,7 +31,9 @@ timeIt "Haskell Scan ByteString 3" bin/scan-byte-string-3
 # This does not complete
 #timeIt "Haskell One Liner ByteString Lazy" bin/one-liner-byte-string-lazy
 
-timeIt "Haskell MapAccum ByteString" bin/map-accum-byte-string
+timeIt "Haskell MapAccum ByteString"           bin/map-accum-byte-string
+timeIt "Haskell MapAccum ByteString Lazy"      bin/map-accum-byte-string-lazy
+timeIt "Haskell MapAccum ByteString Lazy Char" bin/map-accum-byte-string-lazy-char
 
 timeIt "Haskell ByteString Lazy Builder 1" bin/byte-string-lazy-builder-1
 timeIt "Haskell ByteString Lazy Builder 2" bin/byte-string-lazy-builder-2

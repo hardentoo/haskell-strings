@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-go build title.go
-gcc -Wall -O2 -o script script.c
-gcc -Wall -O2 -o capitalise capitalise.c
-gcc -Wall -O2 -o capitalise-goto capitalise-goto.c
+go build -o bin/title title.go
+gcc -Wall -O2 -o bin/script script.c
+gcc -Wall -O2 -o bin/capitalise capitalise.c
+gcc -Wall -O2 -o bin/capitalise-goto capitalise-goto.c
 stack --local-bin-path bin install
