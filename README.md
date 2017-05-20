@@ -5,6 +5,7 @@
 - http://blog.ezyang.com/2010/08/strings-in-haskell/
 - [reddit discussion of performance problem](https://www.reddit.com/r/haskell/comments/120h6i/why_is_this_simple_text_processing_program_so/)
 - https://mmhaskell.com/blog/2017/5/15/untangling-haskells-strings
+- [Beware of readFile (encoding issues)](https://www.snoyman.com/blog/2016/12/beware-of-readfile)
 
 
 # Packages
