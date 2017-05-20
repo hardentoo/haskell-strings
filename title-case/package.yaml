@@ -1,0 +1,18 @@
+name: title-case
+version: 0.1.0
+author: Steven Shaw
+maintainer: steven@steshaw.org
+copyright: (c) 2017, Steven Shaw
+
+extra-source-files:
+  - README.md
+
+ghc-options: -Wall -fwarn-tabs -O2
+
+dependencies:
+  - base >= 4.7 && < 5
+
+executables:
+  title-case:
+    source-dirs:      src
+    main:             Main.hs
