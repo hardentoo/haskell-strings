@@ -13,6 +13,88 @@ dependencies:
   - base >= 4.7 && < 5
 
 executables:
-  title-case:
-    source-dirs:      src
-    main:             Main.hs
+  normal:
+    source-dirs: src
+    main: Normal.hs
+  text:
+    source-dirs: src
+    main: Text.hs
+    dependencies:
+      - text
+  text-lazy:
+    source-dirs: src
+    main: TextLazy.hs
+    dependencies:
+      - text
+  text-lazy-builder:
+    source-dirs: src
+    main: TextLazyBuilder.hs
+    dependencies:
+      - text
+  byte-string:
+    source-dirs: src
+    main: ByteString.hs
+    dependencies:
+      - bytestring
+  byte-string-lazy:
+    source-dirs: src
+    main: ByteStringLazy.hs
+    dependencies:
+      - bytestring
+  scan-text:
+    source-dirs: src
+    main: ScanText.hs
+    dependencies:
+      - text
+  scan-text-lazy:
+    source-dirs: src
+    main: ScanTextLazy.hs
+    dependencies:
+      - text
+  scan-byte-string:
+    source-dirs: src
+    main: ScanByteString.hs
+    dependencies:
+      - bytestring
+  scan-byte-string-2:
+    source-dirs: src
+    main: ScanByteString2.hs
+    dependencies:
+      - bytestring
+  scan-byte-string-3:
+    source-dirs: src
+    main: ScanByteString3.hs
+    dependencies:
+      - bytestring
+  map-accum-byte-string:
+    source-dirs: src
+    main: MapAccumByteString.hs
+    dependencies:
+      - bytestring
+      - word8
+  one-liner-byte-string-lazy:
+    source-dirs: src
+    main: OneLinerByteStringLazy.hs
+    dependencies:
+      - bytestring
+  byte-string-lazy-builder-1:
+    source-dirs: src
+    main: ByteStringLazyBuilder1.hs
+    dependencies:
+      - bytestring
+  byte-string-lazy-builder-2:
+    source-dirs: src
+    main: ByteStringLazyBuilder2.hs
+    dependencies:
+      - bytestring
+  byte-string-lazy-builder-3:
+    source-dirs: src
+    main: ByteStringLazyBuilder3.hs
+    dependencies:
+      - bytestring
+      - word8
+  byte-string-lazy-builder-4:
+    source-dirs: src
+    main: ByteStringLazyBuilder4.hs
+    dependencies:
+      - bytestring

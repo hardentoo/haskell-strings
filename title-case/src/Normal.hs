@@ -1,5 +1,3 @@
--- From https://honza.ca/2012/10/haskell-strings
-
 module Main where
 
 import Data.Char
