@@ -10,6 +10,7 @@
 # Packages
 
 - String is in [base](http://hackage.haskell.org/package/base)
+- [bytestring](http://hackage.haskell.org/package/bytestring)
 - [text](https://hackage.haskell.org/package/text)
 - [utf8-string](http://hackage.haskell.org/package/utf8-string)
 - [compact-string](http://hackage.haskell.org/package/compact-string)
