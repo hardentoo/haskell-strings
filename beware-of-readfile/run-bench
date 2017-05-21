@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+if [[ ! -f pg345.txt ]]; then
+  curl -sSO http://www.gutenberg.org/cache/epub/345/pg345.txt
+fi
+
+./bench.hs && ./bench --output bench.html
