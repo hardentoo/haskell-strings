@@ -72,6 +72,12 @@ executables:
     dependencies:
       - bytestring
       - word8
+  map-accum-byte-string-2:
+    source-dirs: src
+    main: MapAccumByteString2.hs
+    dependencies:
+      - bytestring
+      - word8
   map-accum-byte-string-lazy:
     source-dirs: src
     main: MapAccumByteStringLazy.hs
@@ -109,3 +115,17 @@ executables:
     main: ByteStringLazyBuilder4.hs
     dependencies:
       - bytestring
+  conduit-byte-string:
+    source-dirs: src
+    main: ConduitByteString.hs
+    dependencies:
+      - bytestring
+      - conduit
+      - conduit-combinators
+      - word8
+  conduit-text:
+    source-dirs: src
+    main: ConduitText.hs
+    dependencies:
+      - conduit
+      - conduit-combinators

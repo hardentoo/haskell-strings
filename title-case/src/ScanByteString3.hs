@@ -10,6 +10,9 @@ import GHC.Word (Word8)
 
 import qualified Data.ByteString as B
 
+chr :: Char -> Word8
+chr = fromIntegral . fromEnum
+
 toUpper :: Word8 -> Word8
 toUpper x = if x >= chr 'a' && x <= chr 'z' then x - chr ' ' else x
 
@@ -19,9 +22,6 @@ fun a b | a == chr ' ' || b == chr '\n' = toUpper b
 
 convert :: B.ByteString -> B.ByteString
 convert = B.tail . B.scanl fun (chr ' ')
-
-chr :: Char -> Word8
-chr = fromIntegral . fromEnum
 
 main :: IO ()
 main = B.readFile "input.txt" >>= B.putStr . convert
