@@ -31,7 +31,7 @@ op flag c = if isSpace c then (True, c) else (False, d)
 
 -- fd  ∷ Word8 → () → ((), [Word8])
 op2 ∷ Word8 → Bool → (Bool, Word8)
-op2 c flag = op flag c
+op2 = flip op
 
 -- mapAccum  :: (a -> s -> (s, b)) -> s -> ConduitM a b m s
 -- mapAccumL :: (acc -> Word8 -> (acc, Word8)) -> acc -> ByteString -> (acc, ByteString)
@@ -44,19 +44,6 @@ chunkify = chunksOf defaultChunkSize
   some <- takeC defaultChunkSize
   yield some
   chunkify
--}
-
-{-
-  /Users/steshaw/Projects/haskell-strings/title-case/src/ConduitByteString.hs:51:6: error:
-    • Couldn't match type ‘Bool’ with ‘()’
-      Expected type: ConduitM Word8 Word8 (ResourceT IO) ()
-        Actual type: ConduitM Word8 Word8 (ResourceT IO) Bool
-    • In the first argument of ‘(.|)’, namely ‘mapAccum op2 True’
-      In the second argument of ‘(.|)’, namely
-        ‘mapAccum op2 True .| chunkify .| mapC B.pack .| stdoutC’
-      In the second argument of ‘(.|)’, namely
-        ‘concatC
-         .| mapAccum op2 True .| chunkify .| mapC B.pack .| stdoutC’
 -}
 
 -- capitaliseC :: ConduitM Word8 Word8 (ResourceT IO) Bool
