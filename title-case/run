@@ -41,5 +41,5 @@ timeIt "Haskell MapAccum ByteString Lazy Char" bin/map-accum-byte-string-lazy-ch
 #timeIt "Haskell ByteString Lazy Builder 3" bin/byte-string-lazy-builder-3
 #timeIt "Haskell ByteString Lazy Builder 4" bin/byte-string-lazy-builder-4
 
-#timeIt "Haskell Conduit ByteString" bin/conduit-byte-string
+timeIt "Haskell Conduit ByteString" bin/conduit-byte-string
 #timeIt "Haskell Conduit Text" bin/conduit-text
