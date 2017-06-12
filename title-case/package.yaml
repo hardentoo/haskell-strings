@@ -121,7 +121,6 @@ executables:
       - bytestring
       - conduit
       - conduit-combinators
-      - word8
   conduit-text:
     source-dirs: src
     main: ConduitText.hs
