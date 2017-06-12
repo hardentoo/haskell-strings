@@ -61,7 +61,7 @@ chunkify = chunksOf defaultChunkSize
 
 -- capitaliseC :: ConduitM Word8 Word8 (ResourceT IO) Bool
 capitaliseC :: ConduitM Word8 Word8 (ResourceT IO) ()
-capitaliseC = mapC toUpper -- mapAccum op2 True
+capitaliseC = void $ mapAccum op2 True
 
 main ∷ IO ()
 main = runConduitRes $ sourceFile "input.txt"
