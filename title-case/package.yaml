@@ -121,9 +121,11 @@ executables:
       - bytestring
       - conduit
       - conduit-combinators
+      - criterion
   conduit-text:
     source-dirs: src
     main: ConduitText.hs
     dependencies:
       - conduit
       - conduit-combinators
+      - text
