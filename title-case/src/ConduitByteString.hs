@@ -39,16 +39,14 @@ op flag c =
         then toUpper c
         else c
 
--- mapAccum  :: (a -> s -> (s, b)) -> s -> ConduitM a b m s
--- mapAccumL :: (acc -> Word8 -> (acc, Word8)) -> acc -> ByteString -> (acc, ByteString)
 chunkify :: (Monad m) => ConduitM Word8 [Word8] m ()
 chunkify = chunksOf defaultChunkSize
-
 {-
   some <- takeC defaultChunkSize
   yield some
   chunkify
 -}
+
 capitaliseC :: ConduitM Word8 Word8 (ResourceT IO) ()
 capitaliseC = void $ mapAccum (flip op) True
 
