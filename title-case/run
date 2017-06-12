@@ -33,8 +33,8 @@ timeIt "Haskell Scan ByteString 3" bin/scan-byte-string-3
 
 #timeIt "Haskell MapAccum ByteString"           bin/map-accum-byte-string
 timeIt "Haskell MapAccum ByteString 2"         bin/map-accum-byte-string-2
-#timeIt "Haskell MapAccum ByteString Lazy"      bin/map-accum-byte-string-lazy
-#timeIt "Haskell MapAccum ByteString Lazy Char" bin/map-accum-byte-string-lazy-char
+timeIt "Haskell MapAccum ByteString Lazy"      bin/map-accum-byte-string-lazy
+timeIt "Haskell MapAccum ByteString Lazy Char" bin/map-accum-byte-string-lazy-char
 
 #timeIt "Haskell ByteString Lazy Builder 1" bin/byte-string-lazy-builder-1
 #timeIt "Haskell ByteString Lazy Builder 2" bin/byte-string-lazy-builder-2
